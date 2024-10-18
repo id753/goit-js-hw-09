@@ -38,7 +38,8 @@ export default defineConfig(({ command }) => {
       emptyOutDir: true,
     },
     plugins: [
-      injectHTML(),
+      // Удалите или закомментируйте следующую строку, если файл больше не нужен
+      // injectHTML(),
       FullReload(['./src/**/**.html']),
       SortCss({
         sort: 'mobile-first',
